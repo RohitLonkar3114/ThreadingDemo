@@ -10,13 +10,14 @@ namespace ThreadingDemo
     {
         public void Data(string s)
         {
+            int a,b,c,d,e;
             //lock(this)
             //{
             Monitor.Enter(this);
                 for(int i=1;i<=5;i++)
                 {
-                    Console.WriteLine(s)
-                    Thread.Sle(1000);
+                Console.WriteLine(s);
+                    Thread.Sleep(1000);
                 }
             Monitor.Exit(this);
             //}
